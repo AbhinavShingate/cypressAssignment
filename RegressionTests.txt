@@ -1,0 +1,14 @@
+Login Page Tests
+1. Go to mitigram.com and verify page is open and login button displayed
+2. Go to mitigram.com and click on Login button and verify it is redirected to url https://marketplace.mitigram.com/Account/Login
+and verify that Miti logo is displyed with email, password text field displayed and those are empty.
+3. On Login page verify that login button, forgot your password link,download on app store button,get it on playstore button, 
+contact us link and Would you like to create an account? text and coockies text is displayed.
+4. On login page, forgot your password link,download on app store button,get it on playstore button, 
+contact us link are redirected to respective urls by clicing on them.
+5. On login page, Verify that background is green and download on app store button,get it on playstore button are in black with respective logos
+also verify that other texts and links are in white color.
+6. On login page, click on login button and verify the error message 'Email is required
+The Email field is not a valid e-mail address.' is displayed
+7. On login page, enter email id as 'test@test.com' and verify the error message 'The Email field is not a valid e-mail address.'
+8. On login page, enter invalid email and invalid password and verify the error message 'The Email field is not a valid e-mail address.'
