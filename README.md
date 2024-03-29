@@ -7,6 +7,11 @@ This is basic cypress automation project for mitigram.com UI testing
 3. Set the path for node according OS for more details please follow instructions from the link - https://www.digitalocean.com/community/tutorials/node-js-environment-setup-node-js-installation
 
 ## Setup
+Clone the project from
+
+```
+https://github.com/AbhinavShingate/cypressAssignment.git
+```
 Run in the project root folder (it will install all necessary dependencies):
 
 ```
@@ -21,10 +26,12 @@ There are 2 options how to run tests - GUI and CLI:
 ```
 npm run cy:open
 ```
+then click on E2E testing select a browser chrome and click on start testing and select the test file to run
 OR
 ```
 npx cypress open
 ```
+then click on E2E testing select a browser chrome and click on start testing and select the test file to run
 
 **2) Run tests from command line**
 

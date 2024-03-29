@@ -1,4 +1,12 @@
 {
+  "name": "cypressAssignment",
+  "scripts": {
+    "cy:open": "cypress open"
+    },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AbhinavShingate/cypressAssignment.git"
+  },
   "devDependencies": {
     "cypress": "^13.7.1"
   }
