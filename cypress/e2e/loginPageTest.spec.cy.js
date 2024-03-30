@@ -29,4 +29,11 @@ describe('Login Page', () => {
     cy.get(loginPage.forgotPasswordLink).click()
     cy.get(forgotPasswordPage.forgotPasswordTitle).should('be.visible').and('have.text','Forgot your password?')
   })
+
+  it('verify without entering email and password and clicking on login button that error is generated', () => {
+    cy.visit(url.loginPageURL)
+    cy.get(loginPage.mitigramLogo).should('be.visible')
+    cy.get(loginPage.LoginButton).click()
+    cy.get(loginPage.errorMessege).should('be.visible').contains('Email is required The Email field is not a valid e-mail address.')
+  })
 })
