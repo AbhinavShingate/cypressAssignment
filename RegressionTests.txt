@@ -1,8 +1,9 @@
 Login Page Tests on desktop chrome browser
+
 1. Go to mitigram.com and verify page is open and login button displayed
 2. Go to mitigram.com and click on Login button and verify it is redirected to url https://marketplace.mitigram.com/Account/Login
 and verify that Miti logo is displyed with email, password text field displayed and those are empty.
-3. On Login page verify that login button, forgot your password link,download on app store button,get it on playstore button, 
+3. On Login page, verify that login button, forgot your password link,download on app store button, get it on playstore button, 
 contact us link and Would you like to create an account? text and coockies text is displayed.
 4. On login page,verify that forgot your password link is displayed and click on it verify that
 it is redirected to https://marketplace.mitigram.com/Account/ForgotPassword and verify forgot password page
@@ -10,10 +11,27 @@ it is redirected to https://marketplace.mitigram.com/Account/ForgotPassword and 
 it is redirected to https://apps.apple.com/us/app/mitigram/id1453993945 and verify app centre page
 6. On Login page,verify that get it on playstore button is displayed, click on it and verify that
 it is redirected to https://play.google.com/store/apps/details?id=com.mitigram.marketplace&pli=1 page and verify playstore page. 
-7. On Login page, contact us link are redirected to respective urls by clicing on them.
-5. On login page, Verify that background is green and download on app store button,get it on playstore button are in black with respective logos
+7. On Login page, Verify that contact us link is visible it is redirected to https://mitigram.com/#contact after clicing on it and it is open in new tab.
+Note - [looks like it is defect when I verified through footer links on clicking on contact link it is redirected to correct page https://mitigram.com/contact]
+8. On login page, Verify that background is green and download on app store button,get it on playstore button are in black with respective logos
 also verify that other texts and links are in white color.
-6. On login page, click on login button and verify the error message 'Email is required
+9. On login page, click on login button and verify the error message 'Email is required
 The Email field is not a valid e-mail address.' is displayed
-7. On login page, enter email id as 'test@test.com' and verify the error message 'The Email field is not a valid e-mail address.'
-8. On login page, enter invalid email and invalid password and verify the error message 'Invalid login attempt.'
+10. On login page, enter email id as 'test1test.com' and verify the error message 'The Email field is not a valid e-mail address.'
+11. On login page, enter invalid email and invalid password and verify the error message 'Invalid login attempt.'
+12. On login page, fill email field with email string,empty password and click on login button and verify that 'Password is required' error is displayed
+13. On login page, fill password field with emapty email and click on login button and verify that 'Email is required The Email field is not a valid e-mail address.' error displayed.
+14. On login page, check email field for all special characters and without using @ .com characters shows the error message 'The Email field is not a valid e-mail address.'
+15. On Login page. after enatering email and password field and clicing on login button, verify that login api is triggered in networks tab and 
+verify api URL: https://marketplace.mitigram.com/Account/Login?ReturnUrl=%2F, Status: 200 OK is shown.
+
+As I dont have correct login details there will be more tests for successfull login
+Note:- perform same test execution on mobile browser and other desktop browser as well
+
+
+Careers Page Tests on desktop chrome browser
+1. Go to mitigram.com and scroll down to the bottom of the page and see that careers link is visible.
+2. Go to mitigram.com and scroll down to the bottom of the page and click on careers link and verify that it is redirected to the https://mitigram.com/careers page and text 'Make Mitigram your next move' is visible.
+3. On Careers page, Verify that on header miti logo, solutions link, why mitigram link, resources link, About US link, Request a demo and login button is displayed.
+Note- On chrome browser version 123.0 it is observed that due to image on right side login button is not clearly visible also about us link is half cut. looks like UI defect.
+4. On Careers page,
