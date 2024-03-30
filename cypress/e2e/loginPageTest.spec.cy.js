@@ -36,4 +36,38 @@ describe('Login Page', () => {
     cy.get(loginPage.LoginButton).click()
     cy.get(loginPage.errorMessege).should('be.visible').contains('Email is required The Email field is not a valid e-mail address.')
   })
+
+  it('verify error messeges for empty password field', () => {
+    cy.visit(url.loginPageURL)
+    cy.get(loginPage.mitigramLogo).should('be.visible')
+    cy.get(loginPage.emailField).type('test@test.com')
+    cy.get(loginPage.LoginButton).click()
+    cy.get(loginPage.errorMessege).should('be.visible').contains('Password is required')
+  })
+
+it('verify error messeges for empty email field', () => {
+    cy.visit(url.loginPageURL)
+    cy.get(loginPage.mitigramLogo).should('be.visible')
+    cy.get(loginPage.passwordField).type('test@test')
+    cy.get(loginPage.LoginButton).click()
+    cy.get(loginPage.errorMessege).should('be.visible').contains('Email is required The Email field is not a valid e-mail address.')
+})
+
+it('verify error messeges for invalid email field', () => {
+    cy.visit(url.loginPageURL)
+    cy.get(loginPage.mitigramLogo).should('be.visible')
+    cy.get(loginPage.emailField).type('testtest.com')
+    cy.get(loginPage.passwordField).type('test@test')
+    cy.get(loginPage.LoginButton).click()
+    cy.get(loginPage.errorMessege).should('be.visible').contains('The Email field is not a valid e-mail address.')
+})
+
+it('verify error messeges for invalid email and password field', () => {
+    cy.visit(url.loginPageURL)
+    cy.get(loginPage.mitigramLogo).should('be.visible')
+    cy.get(loginPage.emailField).type('test@test.com')
+    cy.get(loginPage.passwordField).type('test@test')
+    cy.get(loginPage.LoginButton).click()
+    cy.get(loginPage.errorMessege).should('be.visible').contains('Invalid login attempt.')
+  })
 })
