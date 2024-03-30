@@ -71,3 +71,10 @@ Careers Page Tests on desktop Chrome browser
 Note-On Chrome browser version 123.0 it is observed that due to the image on the right side, the login button is not clearly visible. Also, about us the link is half cut. It looks like a UI defect.
 
 4. On the Careers page, Verify cursor overriding functionality like hover cursor on solutions and why mitigram, and see that options in solutions 'by industry' and 'by products' options are visible. Under 'by industry', 'explore our corporate offerings' and 'explore our financial institutions offerings' are visibly similar on 'by products', 'Miti square', 'Miti manager' and 'Miti gateway' options are visible.
+
+5.On the Careers page, Verify that 'Make Mitigram your next move' title is visible and the text below is visible. Click on Open positions it should redirect to the https://www.mitigram.com/careers#open-positions and open positions should be visible and be default 'All' categories should be selected.
+
+6.On the Careers open positions page, Select first job post, here right now its BI Analyst after selecting it + should become - and we should see the short job description 'learn more' button, apply for this position button and job Location on the right hand side.
+
+7. After selecting the job post 'BI Analyst' and clicking on 'Learn more' button an pdf should be open with the detailed job description for same job position. Clicking on back button it should come back to open positions page.
+
