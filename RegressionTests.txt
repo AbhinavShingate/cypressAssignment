@@ -78,3 +78,9 @@ Note-On Chrome browser version 123.0 it is observed that due to the image on the
 
 7. After selecting the job post 'BI Analyst' and clicking on 'Learn more' button an pdf should be open with the detailed job description for same job position. Clicking on back button it should come back to open positions page.
 
+8. After selecting the job post 'QA Automation Engineer' and clicking on 'Learn more' button an pdf should be open with the detailed job description for same job position. Clicking on back button it should come back to open positions page now click on 'Apply for this position' and verify that it is redirected to the contact page.
+
+9. On the Careers open positions page, Verify that 'LIFE AT MITIGRAM' section contains all necessary information
+
+10. On the Careers open positions page, Scroll down to the bottom and verify all footer elements like mitigram logo,addresses,email, x and linked in logos copyright text on the left bottom side and all the links under solutions, platform and company
+
